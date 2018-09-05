@@ -11,3 +11,6 @@ def test_random_fib(f_fib):
     a = f_fib(n)
     n2 = np.random.randint(3, n)
     assert a[n2] == a[n2-1] + a[n2-2]
+
+def test_fail():
+    raise ValueError("I WANT MY TEAAAAAA!!!!)
